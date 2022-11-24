@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK BOOK</title>
+
+    <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
+    <link rel="stylesheet" href="assets/css/styile.css">
+</head>
+<body class="mainBg01">
+    <div>
+        <div id="mainWrap">
+            <div class="bg01"></div>
+            <div class="mainInner">
+                <header id="header">
+                    <div>
+                        <h2 class="headerTitile"><a href="#">
+                            WELLCOM TO <br>
+                            BOOK! BOOK!
+                        </a></h2>
+                        <h2 class="headerTitile line">
+                            WELLCOM TO <br>
+                            BOOK! BOOK!
+                        </h2>
+                    </div>
+                    <nav class="mainMenu">
+                        <ul>
+                            <li><a href="books.html">BOOKS</a></li>
+                            <li><a href="quzi.html">QUIZ</a></li>
+                            <li><a href="Genre.html">GENRE</a></li>
+                        </ul>
+                    </nav>
+
+                </header>
+                <main id="mainConts" class="main__container">
+                    <form action="#" class="searchWrap">
+                        <input type="text" id="mainSearch" class="mainSearch" placeholder="원하는 책을 검색해보세요!" required>
+                        <button class="main__searchBtn"></button>
+                        <span class="genre_pick">오늘은 <em>추리 / 스릴러</em> 가 어떠신가요!</span>
+                    </form>
+                    <div class="rightCont">
+                        <div class="iconBox">
+                            <div class="book">
+                                <img src="/assets/img/mainBookIcon01.svg" alt="">
+                            </div>
+                            <div class="heart01">
+                                <img src="/assets/img/mainHeartIcon01.svg" alt="">
+                            </div>
+                            <div class="heart02">
+                                <img src="/assets/img/mainHeartIcon02.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="note">
+                            <div class="noteDesc">
+                                <h3>Book <br> recommendations</h3>
+                                <p>북북과 함께 도서 찾기</p>
+                            </div>
+                            <a href="quzi.html" class="noteBtn"></a>
+                        </div>
+                    </div>
+                    <article id="bookList">
+                        <h2>BOOK LIST</h2>
+                        <div class="book__wrap">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide book-1">
+                                        <a href="#">
+                                            <img src="/assets/img/mainBook01.png" alt="">
+                                            <span>The Psychology of Money</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide book-2">
+                                        <a href="#">
+                                            <img src="/assets/img/mainBook02.png" alt="">
+                                            <span>The Psychology of Money</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide book-3">
+                                        <a href="#">
+                                            <img src="/assets/img/mainBook03.png" alt="">
+                                            <span>The Psychology of Money</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide book-4">
+                                        <a href="#">
+                                            <img src="/assets/img/mainBook04.png" alt="">
+                                            <span>The Psychology of Money</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide book-1">
+                                        <a href="#">
+                                            <img src="/assets/img/mainBook01.png" alt="">
+                                            <span>The Psychology of Money</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide book-2">
+                                        <a href="#">
+                                            <img src="/assets/img/mainBook02.png" alt="">
+                                            <span>The Psychology of Money</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide book-3">
+                                        <a href="#">
+                                            <img src="/assets/img/mainBook03.png" alt="">
+                                            <span>The Psychology of Money</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide book-4">
+                                        <a href="#">
+                                            <img src="/assets/img/mainBook04.png" alt="">
+                                            <span>The Psychology of Money</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="book-1">
+                                <img src="/assets/img/mainBook01.png" alt="">
+                                <span>The Psychology of Money</span>
+                            </div>
+                            <div class="book-2">
+                                <img src="/assets/img/mainBook02.png" alt="">
+                                <span>The Psychology of Money</span>
+                            </div>
+                            <div class="book-3">
+                                <img src="/assets/img/mainBook03.png" alt="">
+                                <span>The Psychology of Money</span>
+                            </div>
+                            <div class="book-4">
+                                <img src="/assets/img/mainBook04.png" alt="">
+                                <span>The Psychology of Money</span>
+                            </div> -->
+                        </div>
+                    </article>
+                    
+
+                </main>
+            </div>    
+        </div>
+        <footer id="footer">
+            <p class="copylight">
+                ©THE BOOKBOOK
+            </p>
+        </footer>
+    </div>
+
+    <script src="assets/js/swiper.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 50,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+      </script>
+</body>
+</html>

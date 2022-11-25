@@ -98,7 +98,7 @@ select {
 }
 button {
     border: 0;
-    background: inherit;
+    background: transparent;
 }
 /* // 스타일 초기화 */
 h1,

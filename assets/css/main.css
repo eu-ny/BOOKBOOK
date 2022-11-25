@@ -1,9 +1,12 @@
 /* main background */
 .mainBg01 {
     background-image: url(../img/bg01.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     height: 103vh;
     position: relative;
-    z-index: -1;
+    z-index: -2;
 }
 
 #mainWrap {
@@ -16,7 +19,7 @@
     border-radius: 30px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.284);
     box-sizing: border-box;
-    z-index: -1;
+    z-index: -2;
 }
 
 .bg01 {
@@ -34,7 +37,7 @@
     /* background-size: 100% 100%; */
     background-position: 0 0;
     filter: blur(1px);
-    z-index: -1;
+    z-index: -2;
 }
 
 .mainInner {
@@ -74,10 +77,12 @@
     display: inline-block;
     font-weight: bold;
     z-index: 1;
-    padding: 0 ;
+    padding: 0 10px;
     padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
 }
 .mainMenu > ul > li > a:hover {
+    transition: all 0.3s;
     border-bottom: 2px solid #111053;
 }
 
@@ -130,27 +135,55 @@
 /* icon */
 .iconBox .book {
     position: absolute;
-    top: 80px;
+    top: 28px;
     right: 18%;
     /* width: 325px;
     height: 350px; */
-    width: 23.5vw;
-    z-index: 1;
+    width: 16vw;
+    z-index: -1;
+    animation: bounce 4s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-8px);
+    }
+    50% {
+        transform: translateY(4px);
+    }
+    100% {
+        transform: translateY(-8px);
+    }
 }
 .iconBox .heart01 {
     position: absolute;
     top: 90px;
-    right: 32%;
+    right: 33%;
     /* width: 300px;
     height: 251px; */
-    width: 21vw;
-    z-index: -1;
+    width: 20vw;
+    z-index: -2;
+    animation: bounce2 4s infinite;
 }
+@keyframes bounce2 {
+    0% {
+        transform: translateX(0px) translateY(-6px);
+    }
+    50% {
+        transform: translateX(10px) translateY(8px);
+    }
+    100% {
+        transform: translateX(0px)translateY(-6px);
+    }
+}
+
 .iconBox .heart02 {
     position: absolute;
     top: 40px;
     left: 42%;
+    animation: bounce 4s infinite;
 }
+
 .note {
     position: absolute;
     top: 110px;
@@ -163,7 +196,25 @@
     height: 235px;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.142);
     text-align: center;
+    transition: all 0.3s cubic-bezier(0.35, 0.08, 0.56, 1.16);
+    transform: scale(1);
 }
+.note:hover {
+    transform: scale(1.1);
+}
+
+/* @keyframes note {
+    0% {
+        transform: translateY(-3px);
+    }
+    50% {
+        transform: translateY(2px);
+    }
+    100% {
+        transform: translateY(-3px);
+    }
+} */
+
 .noteDesc {
     margin-top: 60px;
     font-size: 14px;
@@ -202,6 +253,9 @@
     /* width: 200px;
     height: 260px; */
     width: 14vw !important;
+}
+.book-1 > a > img, .book-2 > a > img, .book-3 > a > img, .book-4 > a > img {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.284);
 }
 .book-1 > a >span, .book-2 > a >span, .book-3 > a >span, .book-4 > a >span    {
     display: block;
